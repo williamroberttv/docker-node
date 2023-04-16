@@ -8,3 +8,5 @@ app.listen(process.env.API_PORT || 3000);
 app.get("/", (_, res) => {
   res.send("Hello World!");
 });
+
+console.log(`Server running on port ${process.env.API_PORT || 3000}`);
